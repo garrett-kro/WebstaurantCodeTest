@@ -32,7 +32,6 @@ public class WebstaurantCodeTest {
 
     @Test
     public void searchForTablesAndEmptyCart() {
-        // Search for stainless work table
         searchForProduct("stainless work table");
 
         assertAllSearchResultsOnPageAreTables();
@@ -54,7 +53,7 @@ public class WebstaurantCodeTest {
             List<WebElement> descriptions = searchResults.findElements(By.cssSelector("[data-testid='itemDescription']"));
 
             for(WebElement description : descriptions) {
-                assertTrue(description.getText().contains("Table"), description.getText() + " is not a table");
+                assertTrue(description.getText().contains("Table"), description.getText() + " does not contain 'Table' in it's title");
             }
 
             currentPage++;
