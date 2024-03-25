@@ -11,8 +11,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-import static com.codeborne.selenide.Condition.attribute;
-
 public class WebstaurantCodeTest {
     static WebDriver driver;
 
